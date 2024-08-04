@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --cor1: #fd4556;
+    --cor2: #bd3944;
+    --cor3: #53212b;
+    --cor4: #fffbf5;
+    --cor5: #000000;
+}
+html, body {
+    height: 100%; /* Necessário para o flexbox no body funcionar corretamente */
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+header {
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    text-align: center;
+    padding: 0; /* Pode ser apenas 0 em vez de 0px 0px 0px 0px */
+    color: white;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
+    
+}
+header h1 {
+    margin: 0px 0px 30px 0px;
+    padding-top: 30px;
+    font-size: 4em;
+    font-family: serif;
+}
+header p {
+    margin-bottom: 30px;
+    font-size: 1.8em;
+    font-family: sans-serif;
+}
+h1#SelecaoDeAgente {
+    margin: 30px;
+}
+nav {
+    padding: 5px;
+    margin: 5px;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+nav a:hover {
+    text-decoration: underline;
+    background-color: rgba(255, 255, 255, 0.418);
+    border-radius: 10px;
+}
+main {
+    background-color: white;
+    flex: 1; /* Faz com que o conteúdo expanda para preencher o espaço disponível */
+}
+h3#SelecaoMapa {
+    text-indent: 50px;
+    font-size: 1.4em;
+    padding-top: 20px;
+    background-color: var(--cor5);
+    color: white;
+}
+div.mapa {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    border-radius: 8px;
+    margin: 30px 50px 30px 50px;
+    text-align: center;
+    justify-content: center;
+    
+}
+footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    position: relative;
+    bottom: 0;
+}
