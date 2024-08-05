@@ -3,7 +3,7 @@
 
 @font-face {
     font-family: 'valorant';
-    src: url('../fonts/Valorant.ttf') format('truetype');
+    src: url('./fonts/Valorant.ttf') format('truetype');
     font-style: normal;
     font-weight: normal;
 }
