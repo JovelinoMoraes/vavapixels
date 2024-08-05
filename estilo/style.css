@@ -45,6 +45,7 @@ header h1 {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
     background-image: linear-gradient(to right, var(--cor1) to transparent);
     font-family: 'valorant';
+    text-align: center;
 }
 header p {
     margin-bottom: 40px;
@@ -61,14 +62,16 @@ nav {
     padding-bottom: 20px;
 }
 nav a {
+    display: inline-block;
     text-decoration: none;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
     color: white;
-    padding: 14px;
+    padding: 11px;
     background-image: linear-gradient(to bottom, var(--cor2, 0.418), var(--cor3));
     border-radius: 8px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.363);
     justify-content: center;
+    margin-bottom: 5px;
 }
 nav img {
     position: relative;
@@ -92,7 +95,7 @@ main > h2 {
     color: white;
 }
 main > h3 {
-    text-align: auto;
+    text-align: justify;
     font-size: 1.8em;
     background-image: linear-gradient(to right, var(--cor2), var(--cor3));
     color: white;
