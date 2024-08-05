@@ -96,27 +96,28 @@ main {
 main > h2 {
     text-align: justify;
     text-indent: 10px;
-    font-size: 3em;
+    font-size: 2.5em;
     background-image: linear-gradient(to right, var(--cor2), var(--cor3));
     color: white;
 }
 main > h3 {
     text-indent: 8px;
     text-align: justify;
-    font-size: 1.8em;
+    font-size: 1.5em;
     background-image: linear-gradient(to right, var(--cor2), var(--cor3));
     color: white;
+    padding: 3px;
     }
 main > p {
     text-align: justify;
     text-indent: 20px;
-    margin: 10px;
-    line-height: 1.8em;
+    margin: 0px 10px 0px 10px;
+    line-height: 1.5em;
     font-size: 1.7em;
 }
 h3#SelecaoMapa {
     text-align: center;
-    font-size: 1.4em;
+    font-size: 2.5em;
     padding: 5px;
     background-color: var(--cor5);
     color: white;
