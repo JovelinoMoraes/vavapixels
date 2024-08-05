@@ -136,5 +136,12 @@ footer {
     color: white;
     padding: 5px;
     position: relative;
-    bottom: 0;
+    bottom: 0;    
+}
+footer a {
+    text-decoration: none;
+    color: white;
+}
+footer a:hover {
+    text-decoration: underline;
 }
