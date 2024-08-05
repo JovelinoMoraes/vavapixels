@@ -1,7 +1,11 @@
 @charset "UTF-8";
+
+
 @font-face {
     font-family: 'valorant';
-    src: url(/fonts/Valorant\ Font.ttf);
+    src: url('../fonts/Valorant.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
 }
 
 * {
@@ -41,7 +45,6 @@ header h1 {
     margin: 0px 0px 30px 0px;
     padding-top: 30px;
     font-size: 4em;
-    font-family: serif;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
     background-image: linear-gradient(to right, var(--cor1) to transparent);
     font-family: 'valorant';
@@ -128,29 +131,6 @@ div.mapa {
     margin: 20px 10px 10px 10px;;
     text-align: justify;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
-
-    
-}
-div#bind{
-    background-image: url(/imagens/bind.png);
-}
-div#haven {
-    background-image: url(/imagens/haven.png);
-}
-div#split {
-    background-image: url(/imagens/split.png);
-}
-div#ascent {
-    background-image: url(/imagens/ascent.png);
-}
-div#breeze {
-    background-image: url(/imagens/breeze.png);
-}
-div#fracture {
-    background-image: url(/imagens/fracture.png);
-}
-div#pearl {
-    background-image: url(/imagens/pearl.png);
 }
 footer {
     text-align: center;
