@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+    font-family: 'valorant';
+    src: url(/fonts/Valorant\ Font.ttf);
+}
 
 * {
     margin: 0px;
@@ -28,7 +32,8 @@ header {
     padding: 0; /* Pode ser apenas 0 em vez de 0px 0px 0px 0px */
     color: white;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.377);
-    
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;    
     
 }
 header h1 {
@@ -37,25 +42,36 @@ header h1 {
     font-size: 4em;
     font-family: serif;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.377);
+    background-image: linear-gradient(to right, var(--cor1) to transparent);
+    font-family: 'valorant';
 }
 header p {
-    margin-bottom: 30px;
-    font-size: 1.8em;
-    font-family: sans-serif;
+    margin-bottom: 40px;
+    font-size: 1.3em;
+    font-family: serif;
     text-align: center;
-    padding: 5px;
-    
+    padding: 5px;  
 }
 h1#SelecaoDeAgente {
     margin: 10px;
 }
 nav {
-    padding: 20px 0px 20px 0px;
+    margin-top: 20px;
+    padding-bottom: 20px;
 }
 nav a {
     text-decoration: none;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.404);
     color: white;
-    padding: 15px;
+    padding: 14px;
+    background-image: linear-gradient(to bottom, var(--cor2, 0.418), var(--cor3));
+    border-radius: 8px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.363);
+    justify-content: center;
+}
+nav img {
+    position: relative;
+    top: 5px;
 }
 nav a:hover {
     text-decoration: underline;
@@ -64,8 +80,29 @@ nav a:hover {
     padding: 15px;
 }
 main {
+    margin-top: 10px;
     background-color: white;
     flex: 1; /* Faz com que o conteúdo expanda para preencher o espaço disponível */
+}
+main > h2 {
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 3em;
+    background-image: linear-gradient(to right, black, transparent);
+    color: white;
+}
+main > h3 {
+    text-align: auto;
+    font-size: 1.8em;
+    background-image: linear-gradient(to right, black, transparent);
+    color: white;
+    }
+main > p {
+    text-align: justify;
+    text-indent: 20px;
+    margin: 10px;
+    line-height: 1.8em;
+    font-size: 1.7em;
 }
 h3#SelecaoMapa {
     text-align: center;
@@ -80,13 +117,12 @@ div.mapa {
     display: inline-block;
     width: 300px;
     height: 200px;
-    border: 2px solid black;
+    border: 0.5px solid black;
     border-radius: 8px;
-    margin: 30px 30px 30px 50px;
-    text-align: center;
-    justify-content: center;
+    margin: 20px 10px 10px 10px;;
+    text-align: justify;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.349);
-    
+
     
 }
 div#bind{
@@ -94,6 +130,21 @@ div#bind{
 }
 div#haven {
     background-image: url(/imagens/haven.png);
+}
+div#split {
+    background-image: url(/imagens/split.png);
+}
+div#ascent {
+    background-image: url(/imagens/ascent.png);
+}
+div#breeze {
+    background-image: url(/imagens/breeze.png);
+}
+div#fracture {
+    background-image: url(/imagens/fracture.png);
+}
+div#pearl {
+    background-image: url(/imagens/pearl.png);
 }
 footer {
     text-align: center;
