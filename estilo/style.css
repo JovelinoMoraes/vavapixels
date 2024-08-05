@@ -25,6 +25,7 @@ body {
     flex-direction: column;
     display: flex;
     text-align: center;
+    background-color: #fd455780;
 }
 header {
     background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
@@ -80,21 +81,20 @@ nav a:hover {
     padding: 15px;
 }
 main {
-    margin-top: 10px;
-    background-color: white;
+    margin-top: 5px;
     flex: 1; /* Faz com que o conteúdo expanda para preencher o espaço disponível */
 }
 main > h2 {
     text-align: justify;
     text-indent: 10px;
     font-size: 3em;
-    background-image: linear-gradient(to right, black, transparent);
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
     color: white;
 }
 main > h3 {
     text-align: auto;
     font-size: 1.8em;
-    background-image: linear-gradient(to right, black, transparent);
+    background-image: linear-gradient(to right, var(--cor2), var(--cor3));
     color: white;
     }
 main > p {
